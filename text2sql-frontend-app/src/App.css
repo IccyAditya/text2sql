@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container Styling */
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 200px;
+  background-color: #333;
   color: white;
+  padding: 20px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+/* Content Styling */
+.content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  flex-grow: 1; /* Allow the content to take up remaining space */
+  padding: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Input Section Styling */
+.input-section,
+.output-section {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width of the input/output sections */
+  margin-bottom: 20px;
+}
+
+/* Textarea Styling */
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  resize: none; /* Disable manual resizing */
+  overflow: hidden; /* Hide scrollbar */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #535353;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4b4b4b;
+}
+
+/* Output Section Styling */
+.output-section {
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.table-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
 }

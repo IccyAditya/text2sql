@@ -1,0 +1,66 @@
+{
+    "loan_id": {
+        "datatype": "INT",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "borrower_name": {
+        "datatype": "VARCHAR",
+        "possible_condition_flags": ["EQUALS", "IN"]
+    },
+    "loan_amount": {
+        "datatype": "DECIMAL",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "interest_rates": {
+        "datatype": "DECIMAL",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "loan_term_years": {
+        "datatype": "INT",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "loan_start_date": {
+        "datatype": "DATE",
+        "possible_condition_flags": ["EQUALS", "BETWEEN"]
+    },
+    "loan_end_date": {
+        "datatype": "DATE",
+        "possible_condition_flags": ["EQUALS", "BETWEEN"]
+    },
+    "payment_frequency": {
+        "datatype": "VARCHAR",
+        "possible_condition_flags": ["EQUALS", "IN"]
+    },
+    "monthly_payment": {
+        "datatype": "DECIMAL",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "loan_status": {
+        "datatype": "VARCHAR",
+        "possible_condition_flags": ["EQUALS", "IN"]
+    },
+    "credit_score": {
+        "datatype": "INT",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "borrower_income": {
+        "datatype": "DECIMAL",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "guarantor": {
+        "datatype": "VARCHAR",
+        "possible_condition_flags": ["EQUALS", "IN"]
+    },
+    "loan_type": {
+        "datatype": "VARCHAR",
+        "possible_condition_flags": ["EQUALS", "IN"]
+    },
+    "loan_balance": {
+        "datatype": "DECIMAL",
+        "possible_condition_flags": ["EQUALS", "ABOVE", "BELOW", "IN", "BETWEEN"]
+    },
+    "payment_date": {
+        "datatype": "DATE",
+        "possible_condition_flags": ["EQUALS", "BETWEEN"]
+    }
+}

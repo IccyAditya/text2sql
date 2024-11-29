@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    background: #D8EFD3;
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.S-container {
+    width: 55%;
+    background: #759c7a;
+    padding: 8px 16px;
+    position: absolute;
+    bottom: 4%;
+    left: auto;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 20px;
+}
+
+.Search-container {
+    display: flex;
+    width: 100%;
+    font-family: "Fira Code";
+    background: #759c7a;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    min-height: calc(1.5em + 32px);
+    height: fit-content;
+    max-height: 300px;
+    font-size: 18px;
+    line-height: 1.5;
+    resize: none;
+    overflow-y: auto;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    border: none;
+}
+
+.chat-container {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow-y: auto; /* Allow scrolling */
+    height: calc(100vh - 120px); /* Adjust height to leave space for other UI elements */
+    position: relative;
+}
+
+.chat-screen {
+    width: 80%;
+    max-height: 100%; /* Ensure it doesn't overflow beyond its container */
+    overflow-y: auto; /* Enable scrolling for chat screen */
+    flex-grow: 1; /* Allow chat screen to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+}
